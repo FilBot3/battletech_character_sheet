@@ -1,76 +1,502 @@
 <!DOCTYPE html>
 <html>
-	<title>Battletech Character Sheet</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1"/>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css" />
-	<body>
-		<!---->
-		<header class="w3-center">
-		    <div class="w3-mobile w3-red">
-		        <font size="6">Battletech Character Sheet</font>
-		    </div>
-		</header>
-		<!-- Personal Data --> 
-		<div class="w3-cell-row w3-light-blue">
-			<div class="w3-container w3-cell-row w3-mobile">
-				<p>Personal Data</p>
-			</div>
-			<div class="w3-container w3-cell-row w3-mobile w3-border">
-				<div class="w3-container w3-cell w3-mobile">
-					<div class="w3-container w3-row w3-mobile">
-						Name: Phillip Dudley
-					</div>
-					<div class="w3-container w3-row w3-mobile">
-						<div class="w3-container w3-cell w3-mobile">
-							Height: 200cm
-						</div>
-						<div class="w3-container w3-cell w3-mobile">
-							Weight: 200kg
-						</div>
-					</div>
-					<div class="w3-container w3-row w3-mobile">
-						<div class="w3-container w3-cell w3-mobile">
-							Hair: Brown
-						</div>
-						<div class="w3-container w3-cell w3-mobile">
-							Eyes: Brown
-						</div>
-					</div>
-				</div>
-				<div class="w3-container w3-cell w3-mobile w3-border">
-					<div class="w3-container w3-row w3-mobile">
-						Player: Phillip Dudley
-					</div>
-					<div class="w3-container w3-row w3-mobile">
-						Affiliation: Federated Suns
-					</div>
-					<div class="w3-container w3-row w3-mobile">
-						Extra: He likes mechs.
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="w3-cell-row">
-		    <div class="w3-container w3-cell w3-mobile">
-		        <!-- Attributes -->
-		        <div class="w3-container w3-cell-row w3-mobile w3-green">
-		            Attributes
-		        </div>
-		        <!-- Traits (Personal) -->
-		        <div class="w3-container w3-cell-row w3-mobile w3-yellow">
-		            Traits
-		        </div>
-		    </div>
-		    <!-- Combat Data -->
-		    <div class="w3-container w3-cell w3-mobile w3-grey">
-		        Combat Data
-		    </div>
-		</div>
-
-		<footer class="w3-center w3-light-grey">
-			<div class="w3-mobile">
-			    <font size="1"><a href="http://bg.battletech.com/">Battletech</a> is a licensed under <a href="https://www.topps.com/">Topps</a> and <a href="http://www.catalystgamelabs.com/">Catalyst Game Labs</a></font>
-			</div>
-		</footer>
-	</body>
+  <head>
+    <title>BattleTech A Time of War Character Sheet</title>
+    <link rel="stylesheet" type="text/css" href="https://w3schools.com/w3css/3/w3.css"></link>
+    <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
+    <meta charset="utf-8"></meta>
+  </head>
+  <body>
+    <div class="w3-mobile">
+      <header class="w3-center w3-red">
+        <text>Battletech Character Sheet</text>
+      </header>
+      <div class="w3-row w3-indigo">
+        <div class="w3-half">
+          <div>
+            <text>Character Name: </text>
+            <text>Phillip Dudley</text>
+          </div>
+          <div class="w3-row">
+            <div class="w3-half">
+              <text>Height(cm): </text>
+              <text>200</text>
+            </div>
+            <div class="w3-half">
+              <text>Weight(kg): </text>
+              <text>300</text>
+            </div>
+          </div>
+          <div class="w3-row">
+            <div class="w3-half">
+              <text>Hair: </text>
+              <text>Brown</text>
+            </div>
+            <div class="w3-half">
+              <text>Eyes: </text>
+              <text>Brown</text>
+            </div>
+          </div>
+        </div>
+        <div class="w3-half">
+          <div>
+            <text>Player: </text>
+            <text>Phillip Dudley</text>
+          </div>
+          <div>
+            <text>Affiliation: </text>
+            <text>Federated Suns</text>
+          </div>
+          <div>
+            <text>Extra: </text>
+            <text>He likes really big 'mechs</text>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row">
+        <div class="w3-half">
+          <div class="w3-row w3-green">
+            <div>
+              <text>Attributes</text>
+            </div>
+            <div class="w3-border">
+              <div class="w3-border">
+                <div class="w3-quarter">
+                  <text>Attribute</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>Score</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>Link</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>XP</text>
+                </div>
+              </div>
+              <div>
+                <div class="w3-quarter">
+                  <text>STR</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>300</text>
+                </div>
+              </div>
+              <div>
+                <div class="w3-quarter">
+                  <text>BOD</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>300</text>
+                </div>
+              </div>
+              <div>
+                <div class="w3-quarter">
+                  <text>RFL</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>300</text>
+                </div>
+              </div>
+              <div>
+                <div class="w3-quarter">
+                  <text>DEX</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>300</text>
+                </div>
+              </div>
+              <div>
+                <div class="w3-quarter">
+                  <text>INT</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>300</text>
+                </div>
+              </div>
+              <div>
+                <div class="w3-quarter">
+                  <text>WIL</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>300</text>
+                </div>
+              </div>
+              <div>
+                <div class="w3-quarter">
+                  <text>CHA</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>300</text>
+                </div>
+              </div>
+              <div>
+                <div class="w3-quarter">
+                  <text>EDG</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter">
+                  <text>300</text>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w3-row w3-cyan">
+            <div>
+              <text>Traits</text>
+            </div>
+            <div class="w3-border">
+              <div class="w3-border">
+                <div class="w3-quarter w3-border-right">
+                  <text>Trait</text>
+                </div>
+                <div class="w3-quarter w3-border-right">
+                  <text>TP</text>
+                </div>
+                <div class="w3-quarter w3-border-right">
+                  <text>Page #</text>
+                </div>
+                <div class="w3-quarter w3-border-right">
+                  <text>XP</text>
+                </div>
+              </div>
+              <div class="w3-border-bottom">
+                <div class="w3-quarter w3-border-right">
+                  <text>farting</text>
+                </div>
+                <div class="w3-quarter w3-border-right">
+                  <text>3</text>
+                </div>
+                <div class="w3-quarter w3-border-right">
+                  <text>342</text>
+                </div>
+                <div class="w3-quarter w3-border-right">
+                  <text>300</text>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-half w3-pink">
+          <div>
+            <text>Combat Data</text>
+          </div>
+          <div class="w3-border">
+            <div>
+              <text>Condition Monitor</text>
+            </div>
+            <div>
+              <text>Standard Damage: </text>
+              <text>40</text>
+            </div>
+            <div>
+              <text>Fatigue Damage: </text>
+              <text>40</text>
+            </div>
+            <div class="w3-row">
+              <div class="w3-half">
+                <text>Stun: </text>
+                <text>[ ]</text>
+              </div>
+              <div class="w3-half">
+                <text>Unconcious: </text>
+                <text>[ ]</text>
+              </div>
+            </div>
+          </div>
+          <div class="w3-row w3-border">
+            <div>
+              <text>Movement (Meters per Turn)</text>
+            </div>
+            <div class="w3-half">
+              <div>
+                <text>Walk: </text>
+                <text>5</text>
+              </div>
+              <div>
+                <text>Run/Evade: </text>
+                <text>8</text>
+              </div>
+              <div>
+                <text>Sprint: </text>
+                <text>12</text>
+              </div>
+            </div>
+            <div class="w3-half">
+              <div>
+                <text>Climb: </text>
+                <text>3</text>
+              </div>
+              <div>
+                <text>Crawl: </text>
+                <text>3</text>
+              </div>
+              <div>
+                <text>Swim: </text>
+                <text>2</text>
+              </div>
+            </div>
+          </div>
+          <div class="w3-border">
+            <div>
+              <text>Personal Armor (Location)</text>
+            </div>
+            <div class="w3-row w3-border">
+              <div class="w3-quarter">
+                <text>Armor</text>
+              </div>
+              <div class="w3-quarter">
+                <text>Location</text>
+              </div>
+              <div class="w3-quarter">
+                <text>Armor Type</text>
+              </div>
+              <div class="w3-quarter">
+                <text>BAR (M/B/E/X)</text>
+              </div>
+            </div>
+          </div>
+          <div class="w3-border">
+            <div>
+              <text>Weapons</text>
+            </div>
+            <div class="w3-row w3-border">
+              <div class="w3-col" style="width:16%">
+                <text>Weapon</text>
+              </div>
+              <div class="w3-col" style="width:16%">
+                <text>Skill</text>
+              </div>
+              <div class="w3-col" style="width:16%">
+                <text>AP/BD</text>
+              </div>
+              <div class="w3-col" style="width:16%">
+                <text>Range</text>
+              </div>
+              <div class="w3-col" style="width:16%">
+                <text>Ammo</text>
+              </div>
+              <div class="w3-col" style="width:16%">
+                <text>Notes</text>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row w3-yellow">
+        <div>
+          <text>Skills</text>
+        </div>
+        <div class="w3-border">
+          <div>
+            <div class="w3-col" style="width:20%">
+              <text>Skill Name</text>
+            </div>
+            <div class="w3-col" style="width:20%">
+              <text>Level</text>
+            </div>
+            <div class="w3-col" style="width:20%">
+              <text>Links</text>
+            </div>
+            <div class="w3-col" style="width:20%">
+              <text>TN/C</text>
+            </div>
+            <div class="w3-col" style="width:20%">
+              <text>XP</text>
+            </div>
+          </div>
+          <div>
+            <div class="w3-col" style="width:20%">
+              <text>Farting</text>
+            </div>
+            <div class="w3-col" style="width:20%">
+              <text>3</text>
+            </div>
+            <div class="w3-col" style="width:20%">
+              <text>CHA</text>
+            </div>
+            <div class="w3-col" style="width:20%">
+              <text>3/SC</text>
+            </div>
+            <div class="w3-col" style="width:20%">
+              <text>300</text>
+            </div>
+          </div>
+          <div>
+            <div class="w3-col" style="width:20%">
+              <text>Farting</text>
+            </div>
+            <div class="w3-col" style="width:20%">
+              <text>3</text>
+            </div>
+            <div class="w3-col" style="width:20%">
+              <text>CHA</text>
+            </div>
+            <div class="w3-col" style="width:20%">
+              <text>3/SC</text>
+            </div>
+            <div class="w3-col" style="width:20%">
+              <text>300</text>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-blue">
+        <div>
+          <text>Biography</text>
+        </div>
+        <div class="w3-border">
+          <div class="w3-row">
+            <div class="w3-half">
+              <text>Life Module</text>
+            </div>
+            <div class="w3-half">
+              <text>Other Notes</text>
+            </div>
+          </div>
+          <div class="w3-row">
+            <div class="w3-half">
+              <text>1/Early Childhood: </text>
+            </div>
+            <div class="w3-half">
+              <text>He grew up.</text>
+            </div>
+          </div>
+          <div class="w3-row">
+            <div class="w3-half">
+              <text>2/Late Childhood</text>
+            </div>
+            <div class="w3-half">
+              <text>He went to school</text>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-orange">
+        <div>
+          <text>Items</text>
+        </div>
+        <div class="w3-border">
+          <div class="w3-row">
+            <div class="w3-third">
+              <text>Item</text>
+            </div>
+            <div class="w3-third">
+              <text>Location</text>
+            </div>
+            <div class="w3-third">
+              <text>Data/Statistics</text>
+            </div>
+          </div>
+          <div class="w3-row">
+            <div class="w3-third">
+              <text>Bicycle</text>
+            </div>
+            <div class="w3-third">
+              <text>Dropship Vanton</text>
+            </div>
+            <div class="w3-third">
+              <text>Old, </text>
+              <text>Worth 100CB, </text>
+              <text>Archaic Technology.</text>
+            </div>
+          </div>
+        </div>
+        <div class="w3-deep-orange">
+          <text>C-Bills: </text>
+          <text>4000</text>
+        </div>
+      </div>
+      <div class="w3-lime">
+        <div>
+          <text>Vehicle Data</text>
+        </div>
+        <div>
+          <div class="w3-border">
+            <div class="w3-row">
+              <div class="w3-third">
+                <text>Vehicle Model/Name: </text>
+              </div>
+              <div class="w3-third">
+                <text>Vehicle Type: </text>
+              </div>
+              <div class="w3-third">
+                <text>Vehicle Mass: </text>
+              </div>
+            </div>
+            <div>
+              <text>Vehicle Traits: </text>
+            </div>
+            <div>
+              <text>Notes: </text>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="w3-center w3-light-grey">
+        <div class="w3-mobile">
+          <font size="1">
+            <a href="http://bg.battletch.com/">
+              <text>Battletech</text>
+            </a>
+            <text> is licensed under </text>
+            <a href="https://www.topps.com/">
+              <text>Topps</text>
+            </a>
+            <text> and </text>
+            <a href="http://catalystgamelabs.com/">
+              <text>Catalyst Game Labs</text>
+            </a>
+          </font>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
