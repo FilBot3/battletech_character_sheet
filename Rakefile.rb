@@ -17,3 +17,11 @@ task :watcher do
   puts '=> Watching with Guard'
   Kernel.system('bundle exec guard')
 end
+
+task :watcher2 do 
+  require 'guard'
+  require 'guard/commander'
+
+  Guard.setup(guardfile: 'Guardfile')
+  Guard.run_all
+end
