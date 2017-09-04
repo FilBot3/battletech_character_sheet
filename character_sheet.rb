@@ -61,60 +61,60 @@ html = RubyHtml::Generator.new.document {
         div( class: 'w3-half' ) { # Attributes, Traits
           div( class: 'w3-row w3-green' ) { # Attributes
             div() { text('Attributes') }
-            div( class: 'w3-border' ) {
+            div() {
               div( class: 'w3-border' ) { # Label Row
-                div( class: 'w3-quarter' ) { text('Attribute') }
-                div( class: 'w3-quarter' ) { text('Score') }
-                div( class: 'w3-quarter' ) { text('Link') }
-                div( class: 'w3-quarter' ) { text('XP') }
+                div( class: 'w3-col s3 m3 l4' ) { text('Attribute') }
+                div( class: 'w3-col s3 m3 l4' ) { text('Score') }
+                div( class: 'w3-col s3 m3 l4' ) { text('Link') }
+                div( class: 'w3-col s3 m3 l4' ) { text('XP') }
               }
-              div() {
-                div( class: 'w3-quarter' ) { text('STR') }
-                div( class: 'w3-quarter' ) { text('3') }
-                div( class: 'w3-quarter' ) { text('3') }
-                div( class: 'w3-quarter' ) { text('300') }
+              div( class: 'w3-border' ) {
+                div( class: 'w3-col s3 m3 l4' ) { text('STR') }
+                div( class: 'w3-col s3 m3 l4' ) { text('3') }
+                div( class: 'w3-col s3 m3 l4' ) { text('3') }
+                div( class: 'w3-col s3 m3 l4' ) { text('300') }
               }
-              div() {
-                div( class: 'w3-quarter' ) { text('BOD') }
-                div( class: 'w3-quarter' ) { text('3') }
-                div( class: 'w3-quarter' ) { text('3') }
-                div( class: 'w3-quarter' ) { text('300') }
+              div( class: 'w3-border' ) {
+                div( class: 'w3-col s3 m3 l4' ) { text('BOD') }
+                div( class: 'w3-col s3 m3 l4' ) { text('3') }
+                div( class: 'w3-col s3 m3 l4' ) { text('3') }
+                div( class: 'w3-col s3 m3 l4' ) { text('300') }
               }
-              div() {
-                div( class: 'w3-quarter' ) { text('RFL') }
-                div( class: 'w3-quarter' ) { text('3') }
-                div( class: 'w3-quarter' ) { text('3') }
-                div( class: 'w3-quarter' ) { text('300') }
+              div( class: 'w3-border' ) {
+                div( class: 'w3-col s3 m3 l4' ) { text('RFL') }
+                div( class: 'w3-col s3 m3 l4' ) { text('3') }
+                div( class: 'w3-col s3 m3 l4' ) { text('3') }
+                div( class: 'w3-col s3 m3 l4' ) { text('300') }
               }
-              div() {
-                div( class: 'w3-quarter' ) { text('DEX') }
-                div( class: 'w3-quarter' ) { text('3') }
-                div( class: 'w3-quarter' ) { text('3') }
-                div( class: 'w3-quarter' ) { text('300') }
+              div( class: 'w3-border' ) {
+                div( class: 'w3-col s3 m3 l4' ) { text('DEX') }
+                div( class: 'w3-col s3 m3 l4' ) { text('3') }
+                div( class: 'w3-col s3 m3 l4' ) { text('3') }
+                div( class: 'w3-col s3 m3 l4' ) { text('300') }
               }
-              div() {
-                div( class: 'w3-quarter' ) { text('INT') }
-                div( class: 'w3-quarter' ) { text('3') }
-                div( class: 'w3-quarter' ) { text('3') }
-                div( class: 'w3-quarter' ) { text('300') }
+              div( class: 'w3-border' ) {
+                div( class: 'w3-col s3 m3 l4' ) { text('INT') }
+                div( class: 'w3-col s3 m3 l4' ) { text('3') }
+                div( class: 'w3-col s3 m3 l4' ) { text('3') }
+                div( class: 'w3-col s3 m3 l4' ) { text('300') }
               }
-              div() {
-                div( class: 'w3-quarter' ) { text('WIL') }
-                div( class: 'w3-quarter' ) { text('3') }
-                div( class: 'w3-quarter' ) { text('3') }
-                div( class: 'w3-quarter' ) { text('300') }
+              div( class: 'w3-border' ) {
+                div( class: 'w3-col s3 m3 l4' ) { text('WIL') }
+                div( class: 'w3-col s3 m3 l4' ) { text('3') }
+                div( class: 'w3-col s3 m3 l4' ) { text('3') }
+                div( class: 'w3-col s3 m3 l4' ) { text('300') }
               }
-              div() {
-                div( class: 'w3-quarter' ) { text('CHA') }
-                div( class: 'w3-quarter' ) { text('3') }
-                div( class: 'w3-quarter' ) { text('3') }
-                div( class: 'w3-quarter' ) { text('300') }
+              div( class: 'w3-border' ) {
+                div( class: 'w3-col s3 m3 l4' ) { text('CHA') }
+                div( class: 'w3-col s3 m3 l4' ) { text('3') }
+                div( class: 'w3-col s3 m3 l4' ) { text('3') }
+                div( class: 'w3-col s3 m3 l4' ) { text('300') }
               }
-              div() {
-                div( class: 'w3-quarter' ) { text('EDG') }
-                div( class: 'w3-quarter' ) { text('3') }
-                div( class: 'w3-quarter' ) { text('3') }
-                div( class: 'w3-quarter' ) { text('300') }
+              div( class: 'w3-border' ) {
+                div( class: 'w3-col s3 m3 l4' ) { text('EDG') }
+                div( class: 'w3-col s3 m3 l4' ) { text('3') }
+                div( class: 'w3-col s3 m3 l4' ) { text('3') }
+                div( class: 'w3-col s3 m3 l4' ) { text('300') }
               }
             }
           }
@@ -122,16 +122,22 @@ html = RubyHtml::Generator.new.document {
             div() { text('Traits') }
             div( class: 'w3-border' ) {
               div( class: 'w3-border' ) { # Header Row
-                div( class: 'w3-quarter w3-border-right' ) { text('Trait') }
-                div( class: 'w3-quarter w3-border-right' ) { text('TP') }
-                div( class: 'w3-quarter w3-border-right' ) { text('Page #') }
-                div( class: 'w3-quarter w3-border-right' ) { text('XP') }
+                div( class: 'w3-col s3 m3 l4' ) { text('Trait') }
+                div( class: 'w3-col s3 m3 l4' ) { text('TP') }
+                div( class: 'w3-col s3 m3 l4' ) { text('Page #') }
+                div( class: 'w3-col s3 m3 l4' ) { text('XP') }
               }
               div( class: 'w3-border-bottom' ) {
-                div( class: 'w3-quarter w3-border-right' ) { text('farting') }
-                div( class: 'w3-quarter w3-border-right' ) { text('3') }
-                div( class: 'w3-quarter w3-border-right' ) { text('342') }
-                div( class: 'w3-quarter w3-border-right' ) { text('300') }
+                div( class: 'w3-col s3 m3 l4' ) { text('Connections') }
+                div( class: 'w3-col s3 m3 l4' ) { text('1') }
+                div( class: 'w3-col s3 m3 l4' ) { text('111') }
+                div( class: 'w3-col s3 m3 l4' ) { text('120') }
+              }
+              div( class: 'w3-border-bottom' ) {
+                div( class: 'w3-col s3 m3 l4' ) { text('Good Vision') }
+                div( class: 'w3-col s3 m3 l4' ) { text('2') }
+                div( class: 'w3-col s3 m3 l4' ) { text('118') }
+                div( class: 'w3-col s3 m3 l4' ) { text('250') }
               }
             }
           }
@@ -192,49 +198,92 @@ html = RubyHtml::Generator.new.document {
           }
           div( class: 'w3-border' ) { # Personal Armor (location)
             div() { text('Personal Armor (Location)') }
-            div( class: 'w3-row w3-border' ) {
-              div( class: 'w3-quarter' ) { text('Armor') }
-              div( class: 'w3-quarter' ) { text('Location') }
-              div( class: 'w3-quarter' ) { text('Armor Type') }
-              div( class: 'w3-quarter' ) { text('BAR (M/B/E/X)') }
+            div() {
+              div( class: 'w3-row w3-border' ) {
+                div( class: 'w3-quarter' ) { text('Armor') }
+                div( class: 'w3-quarter' ) { text('Location') }
+                div( class: 'w3-quarter' ) { text('Armor Type') }
+                div( class: 'w3-quarter' ) { text('BAR (M/B/E/X)') }
+              }
+              div( class: 'w3-row w3-border' ) {
+                div( class: 'w3-quarter' ) { text('Comms Helmet') }
+                div( class: 'w3-quarter' ) { text('Head') }
+                div( class: 'w3-quarter' ) { text('Helmet') }
+                div( class: 'w3-quarter' ) { text('4/5/5/4') }
+              }
+              div( class: 'w3-row w3-border' ) {
+                div( class: 'w3-quarter' ) { text('Bomber Jacket') }
+                div( class: 'w3-quarter' ) { text('Torso') }
+                div( class: 'w3-quarter' ) { text('Jacket') }
+                div( class: 'w3-quarter' ) { text('3/5/4/3') }
+              }
+              div( class: 'w3-row w3-border' ) {
+                div( class: 'w3-quarter' ) { text('Combat Boots') }
+                div( class: 'w3-quarter' ) { text('Feet') }
+                div( class: 'w3-quarter' ) { text('Boots') }
+                div( class: 'w3-quarter' ) { text('2/3/3/1') }
+              }
+              div( class: 'w3-row w3-border' ) {
+                div( class: 'w3-quarter' ) { text('Nylon Gloves') }
+                div( class: 'w3-quarter' ) { text('Hands') }
+                div( class: 'w3-quarter' ) { text('Gloves') }
+                div( class: 'w3-quarter' ) { text('2/2/2/2') }
+              }
             }
           }
           div( class: 'w3-border' ) { # Weapons
             div() { text('Weapons') }
-            div( class: 'w3-row w3-border' ) {
-              div( class: 'w3-col', style: 'width:16%' ) { text('Weapon') }
-              div( class: 'w3-col', style: 'width:16%' ) { text('Skill') }
-              div( class: 'w3-col', style: 'width:16%' ) { text('AP/BD') }
-              div( class: 'w3-col', style: 'width:16%' ) { text('Range') }
-              div( class: 'w3-col', style: 'width:16%' ) { text('Ammo') }
-              div( class: 'w3-col', style: 'width:16%' ) { text('Notes') }
+            div() {
+              div( class: 'w3-row w3-border' ) {
+                div( class: 'w3-col', style: 'width:16%' ) { text('Weapon') }
+                div( class: 'w3-col', style: 'width:16%' ) { text('Skill') }
+                div( class: 'w3-col', style: 'width:16%' ) { text('AP/BD') }
+                div( class: 'w3-col', style: 'width:16%' ) { text('Range') }
+                div( class: 'w3-col', style: 'width:16%' ) { text('Ammo') }
+                div( class: 'w3-col', style: 'width:16%' ) { text('Notes') }
+              }
+              div( class: 'w3-row w3-border' ) {
+                div( class: 'w3-col', style: 'width:16%' ) { text('Knife') }
+                div( class: 'w3-col', style: 'width:16%' ) { text('Melee Weapons') }
+                div( class: 'w3-col', style: 'width:16%' ) { text('1M/1') }
+                div( class: 'w3-col', style: 'width:16%' ) { text('1M') }
+                div( class: 'w3-col', style: 'width:16%' ) { text('N/A') }
+                div( class: 'w3-col', style: 'width:16%' ) { text('Handme-down') }
+              }
             }
           }
         }
       }
-      div( class: 'w3-row w3-yellow' ) { # Skills
+      div( class: 'w3-yellow' ) { # Skills
         div() { text('Skills') }
         div( class: 'w3-border' ) {
-          div() {
-            div( class: 'w3-col', style: 'width:20%' ) { text('Skill Name') }
-            div( class: 'w3-col', style: 'width:20%' ) { text('Level') }
-            div( class: 'w3-col', style: 'width:20%' ) { text('Links') }
-            div( class: 'w3-col', style: 'width:20%' ) { text('TN/C') }
-            div( class: 'w3-col', style: 'width:20%' ) { text('XP') }
+          div( class: 'w3-row' ) {
+            div( class: 'w3-col s2 m2 l2' ) { text('Skill Name') }
+            div( class: 'w3-col s2 m2 l2' ) { text('Level') }
+            div( class: 'w3-col s2 m2 l2' ) { text('Links') }
+            div( class: 'w3-col s2 m2 l2' ) { text('TN/C') }
+            div( class: 'w3-col s2 m2 l2' ) { text('XP') }
           }
-          div() {
-            div( class: 'w3-col', style: 'width:20%' ) { text('Farting') }
-            div( class: 'w3-col', style: 'width:20%' ) { text('3') }
-            div( class: 'w3-col', style: 'width:20%' ) { text('CHA') }
-            div( class: 'w3-col', style: 'width:20%' ) { text('3/SC') }
-            div( class: 'w3-col', style: 'width:20%' ) { text('300') }
+          div( class: 'w3-row' ) {
+            div( class: 'w3-col s2 m2 l2' ) { text('Climbing') }
+            div( class: 'w3-col s2 m2 l2' ) { text('3') }
+            div( class: 'w3-col s2 m2 l2' ) { text('DEX') }
+            div( class: 'w3-col s2 m2 l2' ) { text('7/SB') }
+            div( class: 'w3-col s2 m2 l2' ) { text('300') }
           }
-          div() {
-            div( class: 'w3-col', style: 'width:20%' ) { text('Farting') }
-            div( class: 'w3-col', style: 'width:20%' ) { text('3') }
-            div( class: 'w3-col', style: 'width:20%' ) { text('CHA') }
-            div( class: 'w3-col', style: 'width:20%' ) { text('3/SC') }
-            div( class: 'w3-col', style: 'width:20%' ) { text('300') }
+          div( class: 'w3-row' ) {
+            div( class: 'w3-col s2 m2 l2' ) { text('Small Arms / Bulpup Rifle') }
+            div( class: 'w3-col s2 m2 l2' ) { text('3') }
+            div( class: 'w3-col s2 m2 l2' ) { text('DEX') }
+            div( class: 'w3-col s2 m2 l2' ) { text('7/SB') }
+            div( class: 'w3-col s2 m2 l2' ) { text('300') }
+          }
+          div( class: 'w3-row' ) {
+            div( class: 'w3-col s2 m2 l2' ) { text('Animal Handling') }
+            div( class: 'w3-col s2 m2 l2' ) { text('3') }
+            div( class: 'w3-col s2 m2 l2' ) { text('WIL') }
+            div( class: 'w3-col s2 m2 l2' ) { text('7/SB') }
+            div( class: 'w3-col s2 m2 l2' ) { text('300') }
           }
         }
       }
@@ -266,12 +315,12 @@ html = RubyHtml::Generator.new.document {
       div( class: 'w3-orange' ) { # Inventory
         div() { text('Items') }
         div( class: 'w3-border' ) { # Items
-          div( class: 'w3-row' ) {
+          div( class: 'w3-row w3-border' ) {
             div( class: 'w3-third' ) { text('Item') }
             div( class: 'w3-third' ) { text('Location') }
             div( class: 'w3-third' ) { text('Data/Statistics') }
           }
-          div( class: 'w3-row' ) {
+          div( class: 'w3-row w3-border' ) {
             div( class: 'w3-third' ) { text('Bicycle') }
             div( class: 'w3-third' ) { text('Dropship Vanton') }
             div( class: 'w3-third' ) {
@@ -289,7 +338,31 @@ html = RubyHtml::Generator.new.document {
       div( class: 'w3-lime' ) { # Vehicle Data
         div() { text('Vehicle Data') }
         div() {
-          div( class: 'w3-border' ) { # Vehicle Information
+          div( class: 'w3-row w3-border' ) { # Vehicle Information
+            div( class: 'w3-row' ) {
+              div( class: 'w3-third' ) {
+                text('Vehicle Model/Name: ')
+                text('Blue Nova Sports Car')
+              }
+              div( class: 'w3-third' ) {
+                text('Vehicle Type: ')
+                text('Wheeled/Tracked')
+              }
+              div( class: 'w3-third' ) {
+                text('Vehicle Mass: ')
+                text('4,250')
+              }
+            }
+            div() {
+              text('Vehicle Traits: ')
+              text('Convertable')
+            }
+            div() {
+              text('Notes: ')
+              text('Its a Handme-down')
+            }
+          }
+          div( class: 'w3-row w3-border' ) { # Vehicle Information
             div( class: 'w3-row' ) {
               div( class: 'w3-third' ) {
                 text('Vehicle Model/Name: ')
