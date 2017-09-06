@@ -59,85 +59,85 @@ html = RubyHtml::Generator.new.document {
       }
       div( class: 'w3-row') { # Attributes, Traits, Combat Data
         div( class: 'w3-half' ) { # Attributes, Traits
-          div( class: 'w3-row w3-green' ) { # Attributes
+          div( class: 'w3-green' ) { # Attributes
             div() { text('Attributes') }
             div() {
-              div( class: 'w3-border' ) { # Label Row
-                div( class: 'w3-col s3 m3 l4' ) { text('Attribute') }
-                div( class: 'w3-col s3 m3 l4' ) { text('Score') }
-                div( class: 'w3-col s3 m3 l4' ) { text('Link') }
-                div( class: 'w3-col s3 m3 l4' ) { text('XP') }
+              div( class: 'w3-row w3-border' ) { # Label Row
+                div( class: 'w3-quarter' ) { text('Attribute') }
+                div( class: 'w3-quarter' ) { text('Score') }
+                div( class: 'w3-quarter' ) { text('Link') }
+                div( class: 'w3-quarter' ) { text('XP') }
               }
-              div( class: 'w3-border' ) {
-                div( class: 'w3-col s3 m3 l4' ) { text('STR') }
-                div( class: 'w3-col s3 m3 l4' ) { text('3') }
-                div( class: 'w3-col s3 m3 l4' ) { text('3') }
-                div( class: 'w3-col s3 m3 l4' ) { text('300') }
+              div( class: 'w3-row w3-border' ) {
+                div( class: 'w3-quarter' ) { text('STR') }
+                div( class: 'w3-quarter' ) { text('3') }
+                div( class: 'w3-quarter' ) { text('3') }
+                div( class: 'w3-quarter' ) { text('300') }
               }
-              div( class: 'w3-border' ) {
-                div( class: 'w3-col s3 m3 l4' ) { text('BOD') }
-                div( class: 'w3-col s3 m3 l4' ) { text('3') }
-                div( class: 'w3-col s3 m3 l4' ) { text('3') }
-                div( class: 'w3-col s3 m3 l4' ) { text('300') }
+              div( class: 'w3-row w3-border' ) {
+                div( class: 'w3-quarter' ) { text('BOD') }
+                div( class: 'w3-quarter' ) { text('3') }
+                div( class: 'w3-quarter' ) { text('3') }
+                div( class: 'w3-quarter' ) { text('300') }
               }
-              div( class: 'w3-border' ) {
-                div( class: 'w3-col s3 m3 l4' ) { text('RFL') }
-                div( class: 'w3-col s3 m3 l4' ) { text('3') }
-                div( class: 'w3-col s3 m3 l4' ) { text('3') }
-                div( class: 'w3-col s3 m3 l4' ) { text('300') }
+              div( class: 'w3-row w3-border' ) {
+                div( class: 'w3-quarter' ) { text('RFL') }
+                div( class: 'w3-quarter' ) { text('3') }
+                div( class: 'w3-quarter' ) { text('3') }
+                div( class: 'w3-quarter' ) { text('300') }
               }
-              div( class: 'w3-border' ) {
-                div( class: 'w3-col s3 m3 l4' ) { text('DEX') }
-                div( class: 'w3-col s3 m3 l4' ) { text('3') }
-                div( class: 'w3-col s3 m3 l4' ) { text('3') }
-                div( class: 'w3-col s3 m3 l4' ) { text('300') }
+              div( class: 'w3-row w3-border' ) {
+                div( class: 'w3-quarter' ) { text('DEX') }
+                div( class: 'w3-quarter' ) { text('3') }
+                div( class: 'w3-quarter' ) { text('3') }
+                div( class: 'w3-quarter' ) { text('300') }
               }
-              div( class: 'w3-border' ) {
-                div( class: 'w3-col s3 m3 l4' ) { text('INT') }
-                div( class: 'w3-col s3 m3 l4' ) { text('3') }
-                div( class: 'w3-col s3 m3 l4' ) { text('3') }
-                div( class: 'w3-col s3 m3 l4' ) { text('300') }
+              div( class: 'w3-row w3-border' ) {
+                div( class: 'w3-quarter' ) { text('INT') }
+                div( class: 'w3-quarter' ) { text('3') }
+                div( class: 'w3-quarter' ) { text('3') }
+                div( class: 'w3-quarter' ) { text('300') }
               }
-              div( class: 'w3-border' ) {
-                div( class: 'w3-col s3 m3 l4' ) { text('WIL') }
-                div( class: 'w3-col s3 m3 l4' ) { text('3') }
-                div( class: 'w3-col s3 m3 l4' ) { text('3') }
-                div( class: 'w3-col s3 m3 l4' ) { text('300') }
+              div( class: 'w3-row w3-border' ) {
+                div( class: 'w3-quarter' ) { text('WIL') }
+                div( class: 'w3-quarter' ) { text('3') }
+                div( class: 'w3-quarter' ) { text('3') }
+                div( class: 'w3-quarter' ) { text('300') }
               }
-              div( class: 'w3-border' ) {
-                div( class: 'w3-col s3 m3 l4' ) { text('CHA') }
-                div( class: 'w3-col s3 m3 l4' ) { text('3') }
-                div( class: 'w3-col s3 m3 l4' ) { text('3') }
-                div( class: 'w3-col s3 m3 l4' ) { text('300') }
+              div( class: 'w3-row w3-border' ) {
+                div( class: 'w3-quarter' ) { text('CHA') }
+                div( class: 'w3-quarter' ) { text('3') }
+                div( class: 'w3-quarter' ) { text('3') }
+                div( class: 'w3-quarter' ) { text('300') }
               }
-              div( class: 'w3-border' ) {
-                div( class: 'w3-col s3 m3 l4' ) { text('EDG') }
-                div( class: 'w3-col s3 m3 l4' ) { text('3') }
-                div( class: 'w3-col s3 m3 l4' ) { text('3') }
-                div( class: 'w3-col s3 m3 l4' ) { text('300') }
+              div( class: 'w3-row w3-border' ) {
+                div( class: 'w3-quarter' ) { text('EDG') }
+                div( class: 'w3-quarter' ) { text('3') }
+                div( class: 'w3-quarter' ) { text('3') }
+                div( class: 'w3-quarter' ) { text('300') }
               }
             }
           }
           div( class: 'w3-row w3-cyan' ) { # Traits
             div() { text('Traits') }
             div( class: 'w3-border' ) {
-              div( class: 'w3-border' ) { # Header Row
-                div( class: 'w3-col s3 m3 l4' ) { text('Trait') }
-                div( class: 'w3-col s3 m3 l4' ) { text('TP') }
-                div( class: 'w3-col s3 m3 l4' ) { text('Page #') }
-                div( class: 'w3-col s3 m3 l4' ) { text('XP') }
+              div( class: 'w3-row w3-border' ) { # Header Row
+                div( class: 'w3-quarter' ) { text('Trait') }
+                div( class: 'w3-quarter' ) { text('TP') }
+                div( class: 'w3-quarter' ) { text('Page #') }
+                div( class: 'w3-quarter' ) { text('XP') }
               }
-              div( class: 'w3-border-bottom' ) {
-                div( class: 'w3-col s3 m3 l4' ) { text('Connections') }
-                div( class: 'w3-col s3 m3 l4' ) { text('1') }
-                div( class: 'w3-col s3 m3 l4' ) { text('111') }
-                div( class: 'w3-col s3 m3 l4' ) { text('120') }
+              div( class: 'w3-row w3-border-bottom' ) {
+                div( class: 'w3-quarter' ) { text('Connections') }
+                div( class: 'w3-quarter' ) { text('1') }
+                div( class: 'w3-quarter' ) { text('111') }
+                div( class: 'w3-quarter' ) { text('120') }
               }
-              div( class: 'w3-border-bottom' ) {
-                div( class: 'w3-col s3 m3 l4' ) { text('Good Vision') }
-                div( class: 'w3-col s3 m3 l4' ) { text('2') }
-                div( class: 'w3-col s3 m3 l4' ) { text('118') }
-                div( class: 'w3-col s3 m3 l4' ) { text('250') }
+              div( class: 'w3-row w3-border-bottom' ) {
+                div( class: 'w3-quarter' ) { text('Good Vision') }
+                div( class: 'w3-quarter' ) { text('2') }
+                div( class: 'w3-quarter' ) { text('118') }
+                div( class: 'w3-quarter' ) { text('250') }
               }
             }
           }
