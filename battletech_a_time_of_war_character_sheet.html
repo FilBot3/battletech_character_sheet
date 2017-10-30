@@ -4,55 +4,77 @@
     <title>Battletech: A Time of War</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" >
     <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <style>
+input[type="number"] {
+  width: 70px
+}
+    </style>
+    <script language="javascript" type="text/javascript">
+      <!--
+function w3_open() {
+  document.getElementById("menuSidebar").style.display = "block";
+};
+function w3_close() {
+  document.getElementById("menuSidebar").style.display = "none";
+};
+      //-->
+    </script>
   </head>
   <body>
     <div class="container">
       <header class="w3-center w3-red">
         <h1>Battletech: A Time of War Character Sheet</h1>
       </header>
+      <nav class="w3-teal"><!-- Menu -->
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display: none" id="menuSidebar">
+          <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+          <input type="button" value="Print" onclick="window.print()" />
+        </div>
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">Menu</button>
+      </nav>
       <article>
-        <div><!-- Character Sheet -->
-          <div class="w3-row w3-indigo"><!-- Personal Data -->
+        <div id="character"><!-- Character Sheet -->
+          <div class="w3-row w3-indigo" id="character_personal-data"><!-- Personal Data -->
             <div class="w3-half w3-container"><!-- Left Side -->
               <div><!-- Name -->
                 <text>Name: </text>
-                <text>Phillip Dudley</text>
+                <textarea rows="1" cols="15" id="character_personal-data_character-name">Randy Savage</textarea>
               </div>
               <div class="w3-row">
                 <div class="w3-half"><!-- Height -->
                   <text>Height(cm): </text>
-                  <text>176</text>
+                  <input type="number" name="height" value="0" id="character_personal-data_height" />
                   <text>cm</text>
                 </div>
                 <div class="w3-half"><!-- Weight -->
                   <text>Weight(kg): </text>
-                  <text>114</text>
+                  <input type="number" name="weight" value="0" id="character_personal-data_weight" />
                   <text>kg</text>
                 </div>
               </div>
               <div class="w3-row">
                 <div class="w3-half"><!-- Hair -->
                   <text>Hair: </text>
-                  <text>Brown</text>
+                  <textarea rows="1" cols="5" id="character_personal-data_hair-color">Brown</textarea>
                 </div>
                 <div class="w3-half"><!-- Eyes -->
                   <text>Eyes: </text>
-                  <text>Brown</text>
+                  <textarea rows="1" cols="5" id="character_personal-data_eye-color">Brown</textarea>
                 </div>
               </div>
             </div>
             <div class="w3-half w3-container"><!-- Right Side -->
               <div><!-- Player -->
                 <text>Player: </text>
-                <text>Phillip Dudley</text>
+                <textarea rows="1" cols="15" id="character_personal-data_player-name">Phillip Dudley</textarea>
               </div>
               <div><!-- Affiliation -->
                 <text>Affiliation: </text>
-                <text>Federated Suns</text>
+                <textarea rows="1" cols="15" id="character_personal-data_affiliation">Federated Suns</textarea>
               </div>
               <div><!-- Extra -->
                 <text>Extra: </text>
-                <text>He likes really big mechs</text>
+                <textarea rows="1" cols="15" id="character_personal-data_extra">He likes big 'mechs</textarea>
               </div>
             </div>
           </div>
@@ -68,66 +90,122 @@
                 </div>
                 <div class="w3-row w3-border"><!-- Strength -->
                   <text class="w3-quarter">STR</text>
-                  <text class="w3-quarter">5</text>
-                  <text class="w3-quarter">4</text>
-                  <text class="w3-quarter">500</text>
+                  <div class="w3-quarter">
+                    <input type="number" name="str-score" value="0" id="character_attributes_str_score" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="str-link" value="0" id="character_attributes_str_link" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="str-exp" value="0" style="width: 90px" id="character_attributes_str_exp" />
+                  </div>
                 </div>
                 <div class="w3-row w3-border"><!-- Body -->
                   <text class="w3-quarter">BOD</text>
-                  <text class="w3-quarter">4</text>
-                  <text class="w3-quarter">3</text>
-                  <text class="w3-quarter">400</text>
+                  <div class="w3-quarter">
+                    <input type="number" name="bod-score" value="0" id="character_attributes_bod_score" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="bod-link" value="0" id="character_attributes_bod_link" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="bod-exp" value="0" style="width: 90px" id="character_attributes_bod_exp" />
+                  </div>
                 </div>
                 <div class="w3-row w3-border"><!-- Reflex-->
                   <text class="w3-quarter">RFL</text>
-                  <text class="w3-quarter">2</text>
-                  <text class="w3-quarter">3</text>
-                  <text class="w3-quarter">200</text>
+                  <div class="w3-quarter">
+                    <input type="number" name="rfl-score" value="0" id="character_attributes_rfl_score" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="rfl-link" value="0" id="character_attributes_rfl_link" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="rfl-exp" value="0" style="width: 90px" id="character_attributes_rfl_exp" />
+                  </div>
                 </div>
                 <div class="w3-row w3-border"><!-- Dexterity -->
                   <text class="w3-quarter">DEX</text>
-                  <text class="w3-quarter">2</text>
-                  <text class="w3-quarter">3</text>
-                  <text class="w3-quarter">200</text>
+                  <div class="w3-quarter">
+                    <input type="number" name="dex-score" value="0" id="character_attributes_dex_score" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="dex-link" value="0" id="character_attributes_dex_link" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="dex-exp" value="0" style="width: 90px" id="character_attributes_dex_exp" />
+                  </div>
                 </div>
                 <div class="w3-row w3-border"><!-- Intelligence -->
                   <text class="w3-quarter">INT</text>
-                  <text class="w3-quarter">1</text>
-                  <text class="w3-quarter">1</text>
-                  <text class="w3-quarter">100</text>
+                  <div class="w3-quarter">
+                    <input type="number" name="int-score" value="0" id="character_attributes_int_score" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="int-link" value="0" id="character_attributes_int_link" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="int-exp" value="0" style="width: 90px" id="character_attributes_int_exp" />
+                  </div>
                 </div>
                 <div class="w3-row w3-border"><!-- Will -->
                   <text class="w3-quarter">WIL</text>
-                  <text class="w3-quarter">5</text>
-                  <text class="w3-quarter">2</text>
-                  <text class="w3-quarter">500</text>
+                  <div class="w3-quarter">
+                    <input type="number" name="wil-score" value="0" id="character_attributes_wil_score" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="wil-link" value="0" id="character_attributes_wil_link" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="wil-exp" value="0" style="width: 90px" id="character_attributes_wil_exp" />
+                  </div>
                 </div>
                 <div class="w3-row w3-border"><!-- Charisma -->
                   <text class="w3-quarter">CHA</text>
-                  <text class="w3-quarter">3</text>
-                  <text class="w3-quarter">3</text>
-                  <text class="w3-quarter">300</text>
+                  <div class="w3-quarter">
+                    <input type="number" name="cha-score" value="0" id="character_attributes_cha_score" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="cha-link" value="0" id="character_attributes_cha_link" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="cha-exp" value="0" style="width: 90px" id="character_attributes_cha_exp" />
+                  </div>
                 </div>
                 <div class="w3-row w3-border"><!-- Edge -->
                   <text class="w3-quarter">EDG</text>
-                  <text class="w3-quarter">2</text>
-                  <text class="w3-quarter">2</text>
-                  <text class="w3-quarter">200</text>
+                  <div class="w3-quarter">
+                    <input type="number" name="edg-score" value="0" id="character_attributes_edg_score" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="edg-link" value="0" id="character_attributes_edg_link" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="edg-exp" value="0" style="width: 90px" id="character_attributes_edg_exp" />
+                  </div>
                 </div>
               </div>
               <div class="w3-green"><!-- Traits -->
                 <text>Traits</text>
                 <div class="w3-row w3-border"><!-- Title Row -->
-                  <text class="w3-quarter">Traite</text>
+                  <text class="w3-quarter">Trait</text>
                   <text class="w3-quarter">TP</text>
-                  <text class="w3-quarter">Page Ref.</text>
+                  <text class="w3-quarter">Page Ref_</text>
                   <text class="w3-quarter">XP</text>
                 </div>
                 <div class="w3-row w3-border"><!-- Traits -->
-                  <text class="w3-quarter">Farting</text>
-                  <text class="w3-quarter">3</text>
-                  <text class="w3-quarter">300</text>
-                  <text class="w3-quarter">300</text>
+                  <div class="w3-quarter">
+                    <textarea rows="1" cols="8" id="character_traits_1">Farting</textarea>
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="trait_1_tp" value="0" id="character_traits_1_tp" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="trait_1_page" value="0" id="character_traits_1_page" />
+                  </div>
+                  <div class="w3-quarter">
+                    <input type="number" name="trait_1_exp" value="0" style="width: 90px" id="character_traits_1_exp" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -137,20 +215,20 @@
                 <text>Condition Monitor</text>
                 <div><!-- Standard Damage -->
                   <text>Standard Damage: </text>
-                  <text>40</text>
+                  <input type="number" name="std-damage" value="40" id="character_combat-data_standard-damage" />
                 </div>
                 <div><!-- Fatigue Damage -->
                   <text>Fatigue Damage: </text>
-                  <text>40</text>
+                  <input type="number" name="fat-damage" value="40" id="character_combat-data_fatigue-damage" />
                 </div>
                 <div class="w3-row">
                   <div class="w3-half"><!-- Stuned? -->
                     <text>Stun: </text>
-                    <text>[ ]</text>
+                    <input type="checkbox" name="stunned" value="stunned" id="character_combat-data_stunned">
                   </div>
                   <div class="w3-half"><!-- Unconcious? -->
                     <text>Unconcious: </text>
-                    <text>[ ]</text>
+                    <input type="checkbox" name="unconcious" value="unconcious" id="character_combat-data_unconcious">
                   </div>
                 </div>
               </div>
@@ -161,29 +239,29 @@
                 <div class="w3-half"><!-- Walk, Run/Evade, Sprint -->
                   <div><!-- Walk -->
                     <text>Walk: </text>
-                    <text>5</text>
+                    <input type="number" name="movement-walk" value="0" id="character_movement_walk" />
                   </div>
                   <div><!-- Run/Evade -->
                     <text>Run/Evade: </text>
-                    <text>5</text>
+                    <input type="number" name="movement-run" value="0" id="character_movement_run" />
                   </div>
                   <div><!-- Sprint -->
                     <text>Sprint: </text>
-                    <text>5</text>
+                    <input type="number" name="movement-sprint" value="0" id="character_movement_sprint" />
                   </div>
                 </div>
                 <div class="w3-half"><!-- Climb, Crawl, Swim -->
                   <div><!-- Climb -->
                     <text>Climb: </text>
-                    <text>5</text>
+                    <input type="number" name="movement-climb" value="0" id="character_movement_climb" />
                   </div>
                   <div><!-- Crawl -->
                     <text>Crawl: </text>
-                    <text>5</text>
+                    <input type="number" name="movement-crawl" value="0" id="character_movement_crawl" />
                   </div>
                   <div><!-- Swim -->
                     <text>Swim: </text>
-                    <text>5</text>
+                    <input type="number" name="movement-swim" value="0" id="character_movement_swim" />
                   </div>
                 </div>
               </div>
@@ -198,28 +276,101 @@
                   <text class="w3-quarter">BAR(M/B/E/X)</text>
                 </div>
                 <div class="w3-row w3-border"><!-- Armor Slot 1 -->
-                  <text class="w3-quarter">Main</text>
-                  <text class="w3-quarter">Torso</text>
-                  <text class="w3-quarter">N/A</text>
-                  <text class="w3-quarter">(_/_/_/_)</text>
+                  <text class="w3-quarter" id="character_armor_1_name">Main</text>
+                  <text class="w3-quarter" id="character_armor_1_location">Torso</text>
+                  <div class="w3-quarter">
+                    <textarea rows="1" cols="10" id="character_armor_1_type">-</textarea>
+                  </div>
+                  <div class="w3-quarter" id="character_armor_1_bar">
+                    <textarea rows="1" cols="1" id="character_armor_1_bar_m">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_armor_1_bar_b">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_armor_1_bar_e">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_armor_1_bar_x">-</textarea>
+                  </div>
                 </div>
                 <div class="w3-row w3-border"><!-- Armor Slot 2 -->
-                  <text class="w3-quarter">-</text>
-                  <text class="w3-quarter">-</text>
-                  <text class="w3-quarter">N/A</text>
-                  <text class="w3-quarter">(_/_/_/_)</text>
+                  <div class="w3-quarter">
+                    <textarea rows="1" cols="10" id="character_armor_2_name">-</textarea>
+                  </div>
+                  <div class="w3-quarter">
+                    <select id="character_armor_2_location">
+                      <option value="empty"></option>
+                      <option value="torso">Torso</option>
+                      <option value="head">Head</option>
+                      <option value="arms">Arms</option>
+                      <option value="legs">Legs</option>
+                      <option value="feet">Feet</option>
+                    </select>
+                  </div>
+                  <div class="w3-quarter">
+                    <textarea rows="1" cols="10" id="character_armor_2_type">-</textarea>
+                  </div>
+                  <div class="w3-quarter" id="character_armor_2_bar">
+                    <textarea rows="1" cols="1" id="character_armor_2_bar_m">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_armor_2_bar_b">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_armor_2_bar_e">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_armor_2_bar_x">-</textarea>
+                  </div>
                 </div>
                 <div class="w3-row w3-border"><!-- Armor Slot 3 -->
-                  <text class="w3-quarter">-</text>
-                  <text class="w3-quarter">-</text>
-                  <text class="w3-quarter">N/A</text>
-                  <text class="w3-quarter">(_/_/_/_)</text>
+                  <div class="w3-quarter">
+                    <textarea rows="1" cols="10" id="character_armor_3_name">-</textarea>
+                  </div>
+                  <div class="w3-quarter">
+                    <select id="character_armor_3_location">
+                      <option value="empty"></option>
+                      <option value="torso">Torso</option>
+                      <option value="head">Head</option>
+                      <option value="arms">Arms</option>
+                      <option value="legs">Legs</option>
+                      <option value="feet">Feet</option>
+                    </select>
+                  </div>
+                  <div class="w3-quarter">
+                    <textarea rows="1" cols="10" id="character_armor_3_type">-</textarea>
+                  </div>
+                  <div class="w3-quarter" id="character_armor_3_bar">
+                    <textarea rows="1" cols="1" id="character_armor_3_bar_m">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_armor_3_bar_b">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_armor_3_bar_e">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_armor_3_bar_x">-</textarea>
+                  </div>
                 </div>
                 <div class="w3-row w3-border"><!-- Armor Slot 4 -->
-                  <text class="w3-quarter">-</text>
-                  <text class="w3-quarter">-</text>
-                  <text class="w3-quarter">N/A</text>
-                  <text class="w3-quarter">(_/_/_/_)</text>
+                  <div class="w3-quarter">
+                    <textarea rows="1" cols="10" id="character_armor_4_name">-</textarea>
+                  </div>
+                  <div class="w3-quarter">
+                    <select id="character_armor_4_location">
+                      <option value="empty"></option>
+                      <option value="torso">Torso</option>
+                      <option value="head">Head</option>
+                      <option value="arms">Arms</option>
+                      <option value="legs">Legs</option>
+                      <option value="feet">Feet</option>
+                    </select>
+                  </div>
+                  <div class="w3-quarter">
+                    <textarea rows="1" cols="10" id="character_armor_4_type">-</textarea>
+                  </div>
+                  <div class="w3-quarter" id="character_armor_4_bar">
+                    <textarea rows="1" cols="1" id="character_armor_4_bar_m">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_armor_4_bar_b">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_armor_4_bar_e">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_armor_4_bar_x">-</textarea>
+                  </div>
                 </div>
               </div>
               <div class="w3-border"><!-- Weapons -->
@@ -228,43 +379,115 @@
                 </div>
                 <div class="w3-row w3-border"><!-- Title Row -->
                   <text class="w3-col" style="width:16%">Weapon</text>
-                  <text class="w3-col" style="width:16%">Skill</text>
+                  <text class="w3-col" style="width:8%">Skill</text>
                   <text class="w3-col" style="width:16%">AP/BD</text>
-                  <text class="w3-col" style="width:16%">Range</text>
-                  <text class="w3-col" style="width:16%">Ammo</text>
-                  <text class="w3-col" style="width:16%">Notes</text>
+                  <text class="w3-col" style="width:28%">Range</text>
+                  <text class="w3-col" style="width:8%">Ammo</text>
+                  <text class="w3-col" style="width:24%">Notes</text>
                 </div>
                 <div class="w3-row w3-border"><!-- Weapon Slot 1 -->
-                  <text class="w3-col" style="width:16%">Marial Arts</text>
-                  <text class="w3-col" style="width:16%">-</text>
-                  <text class="w3-col" style="width:16%">_/_</text>
-                  <text class="w3-col" style="width:16%">(Melee)</text>
-                  <text class="w3-col" style="width:16%">N/A</text>
-                  <text class="w3-col" style="width:16%">Fits and Feet</text>
+                  <div class="w3-col" style="width:16%">
+                    <text id="character_weapons_1_name">Martial Arts</text>
+                  </div>
+                  <div class="w3-col" style="width:8%">
+                    <input type="number" name="weapon_slot_1_skill" value="0" id="character_weapons_1_skill" />
+                  </div>
+                  <div class="w3-col" style="width:16%">
+                    <textarea rows="1" cols="1" id="character_weapons_1_ap">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_weapons_1_bd">-</textarea>
+                  </div>
+                  <text class="w3-col" style="width:28%" id="character_weapons_1_range">(Melee)</text>
+                  <div class="w3-col" style="width:8%">
+                    <input type="number" name="weapon_slot_1_ammo" value="0" id="character_weapons_1_ammo" />
+                  </div>
+                  <div class="w3-col" style="width:24%">
+                    <textarea rows="1" cols="8" style="white-space: pre-wrap;" id="character_weapons_1_notes">Fists and feet</textarea>
+                  </div>
                 </div>
                 <div class="w3-row w3-border"><!-- Weapon Slot 2 -->
-                  <text class="w3-col" style="width:16%">-</text>
-                  <text class="w3-col" style="width:16%">-</text>
-                  <text class="w3-col" style="width:16%">_/_</text>
-                  <text class="w3-col" style="width:16%">(_/_/_/_)</text>
-                  <text class="w3-col" style="width:16%">-</text>
-                  <text class="w3-col" style="width:16%">-</text>
+                  <div class="w3-col" style="width:16%">
+                    <textarea rows="1" cols="8" style="white-space: pre-wrap;" id="character_weapons_2_name">-</textarea>
+                  </div>
+                  <div class="w3-col" style="width:8%">
+                    <input type="number" name="weapon_slot_2_skill" value="0" id="character_weapons_2_skill" />
+                  </div>
+                  <div class="w3-col" style="width:16%">
+                    <textarea rows="1" cols="1" id="character_weapons_2_ap">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_weapons_2_bd">-</textarea>
+                  </div>
+                  <div class="w3-col" style="width:28%">
+                    <textarea rows="1" cols="1" id="character_weapons_2_range_short">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_weapons_2_range_medium">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_weapons_2_range_long">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_weapons_2_range_extreme">-</textarea>
+                  </div>
+                  <div class="w3-col" style="width:8%">
+                    <input type="number" name="weapon_slot_2_ammo" value="0" id="character_weapons_2_ammo" />
+                  </div>
+                  <div class="w3-col" style="width:24%">
+                    <textarea rows="1" cols="8" style="white-space: pre-wrap;" id="character_weapons_2_notes">-</textarea>
+                  </div>
                 </div>
                 <div class="w3-row w3-border"><!-- Weapon Slot 3 -->
-                  <text class="w3-col" style="width:16%">-</text>
-                  <text class="w3-col" style="width:16%">-</text>
-                  <text class="w3-col" style="width:16%">_/_</text>
-                  <text class="w3-col" style="width:16%">(_/_/_/_)</text>
-                  <text class="w3-col" style="width:16%">-</text>
-                  <text class="w3-col" style="width:16%">-</text>
+                  <div class="w3-col" style="width:16%">
+                    <textarea rows="1" cols="8" style="white-space: pre-wrap;" id="character_weapons_3_name"></textarea>
+                  </div>
+                  <div class="w3-col" style="width:8%">
+                    <input type="number" name="weapon_slot_3_skill" value="0" id="character_weapons_3_skill" />
+                  </div>
+                  <div class="w3-col" style="width:16%">
+                    <textarea rows="1" cols="1" id="character_weapons_3_ap">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_weapons_3_bd">-</textarea>
+                  </div>
+                  <div class="w3-col" style="width:28%">
+                    <textarea rows="1" cols="1" id="character_wepaons_3_range_short">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_weapons_3_range_medium">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_weapons_3_range_long">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_weapons_3_range_extreme">-</textarea>
+                  </div>
+                  <div class="w3-col" style="width:8%">
+                    <input type="number" name="weapon_slot_3_ammo" value="0" id="character_weapons_3_ammo" />
+                  </div>
+                  <div class="w3-col" style="width:24%">
+                    <textarea rows="1" cols="8" style="white-space: pre-wrap;" id="character_weapons_3_notes">-</textarea>
+                  </div>
                 </div>
                 <div class="w3-row w3-border"><!-- Weapon Slot 4 -->
-                  <text class="w3-col" style="width:16%">-</text>
-                  <text class="w3-col" style="width:16%">-</text>
-                  <text class="w3-col" style="width:16%">_/_</text>
-                  <text class="w3-col" style="width:16%">(_/_/_/_)</text>
-                  <text class="w3-col" style="width:16%">-</text>
-                  <text class="w3-col" style="width:16%">-</text>
+                  <div class="w3-col" style="width:16%">
+                    <textarea rows="1" cols="8" style="white-space: pre-wrap;" id="character_weapons_4_name"></textarea>
+                  </div>
+                  <div class="w3-col" style="width:8%">
+                    <input type="number" name="weapon_slot_4_skill" value="0" id="character_weapons_4_skill" />
+                  </div>
+                  <div class="w3-col" style="width:16%">
+                    <textarea rows="1" cols="1" id="character_weapons_4_ap">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_weapons_4_bd">-</textarea>
+                  </div>
+                  <div class="w3-col" style="width:28%">
+                    <textarea rows="1" cols="1" id="character_weapons_4_range_short">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_weapons_4_range_medium">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_weapons_4_range_long">-</textarea>
+                    <text>/</text>
+                    <textarea rows="1" cols="1" id="character_weapons_4_range_extreme">-</textarea>
+                  </div>
+                  <div class="w3-col" style="width:8%">
+                    <input type="number" name="weapon_slot_4_ammo" value="0" id="character_weapons_4_ammo" />
+                  </div>
+                  <div class="w3-col" style="width:24%">
+                    <textarea rows="1" cols="8" style="white-space: pre-wrap;" id="character_weapons_4_notes">-</textarea>
+                  </div>
                 </div>
               </div>
             </div>
@@ -281,11 +504,29 @@
               <text class="w3-col" style="width:20%">XP</text>
             </div>
             <div class="w3-row w3-border">
-              <text class="w3-col" style="width:20%">-</text>
-              <text class="w3-col" style="width:20%">-</text>
-              <text class="w3-col" style="width:20%">-</text>
-              <text class="w3-col" style="width:20%">-</text>
-              <text class="w3-col" style="width:20%">-</text>
+              <div class="w3-col" style="width:20%">
+                <textarea rows="1" cols="20" id="character_skills_1_name">-</textarea>
+              </div>
+              <div class="w3-col" style="width:20%">
+                <input type="number" name="" value="0" id="character_skills_1_level" />
+              </div>
+              <div class="w3-col" style="width:20%">
+                <textarea rows="1" cols="20" id="character_skills_1_links">-</textarea>
+              </div>
+              <div class="w3-col" style="width:20%">
+                <input type="number" name="" value="0" id="character_skills_1_tn" />
+                <text>/</text>
+                <select>
+                  <option></option>
+                  <option>SA</option>
+                  <option>SB</option>
+                  <option>CA</option>
+                  <option>CB</option>
+                </select>
+              </div>
+              <div class="w3-col" style="width:20%">
+                <input type="number" name="" value="0" id="character_skills_1_exp" />
+              </div>
             </div>
           </div>
           <div class="w3-teal w3-border"><!-- Biography -->
@@ -297,12 +538,28 @@
               <text class="w3-half">Other Notes</text>
             </div>
             <div class="w3-row">
-              <text class="w3-half">Early Childhood</text>
-              <text class="w3-half">He was a child</text>
+              <div class="w3-half">
+                <text id="character_biography_life-module_1_name">Early Childhood</text>
+              </div>
+              <div class="w3-half">
+                <textarea rows="1" cols="50" id="character_biography_life-module_1_notes">He was a child</textarea>
+              </div>
             </div>
             <div class="w3-row">
-              <text class="w3-half">Late Childhood</text>
-              <text class="w3-half">He was a teenager</text>
+              <div class="w3-half">
+                <text id="character_biography_life-module_2_name">Late Childhood</text>
+              </div>
+              <div class="w3-half">
+                <textarea rows="1" cols="50" id="character_biography_life-module_2_notes">He was grew up</textarea>
+              </div>
+            </div>
+            <div class="w3-row">
+              <div class="w3-half">
+                <textarea rows="1" cols="50" id="character_biography_life-module_3_name">-</textarea>
+              </div>
+              <div class="w3-half">
+                <textarea rows="1" cols="50" id="character_biography_life-module_3_notes">-</textarea>
+              </div>
             </div>
           </div>
           <div class="w3-brown w3-border"><!-- Inventory -->
@@ -315,13 +572,19 @@
               <text class="w3-third">Data/Statistics</text>
             </div>
             <div class="w3-row">
-              <text class="w3-third">-</text>
-              <text class="w3-third">-</text>
-              <text class="w3-third">-</text>
+              <div class="w3-third">
+                <textarea rows="1" cols="50" id="character_item_1_name">-</textarea>
+              </div>
+              <div class="w3-third">
+                <textarea rows="1" cols="50" id="character_item_1_location">-</textarea>
+              </div>
+              <div class="w3-third">
+                <textarea rows="1" cols="50" id="character_item_1_data">-</textarea>
+              </div>
             </div>
             <div>
               <text>C-Bills :</text>
-              <text>400</text>
+              <input type="number" name="" value="0" id="character_c-bill_amount" />
             </div>
           </div>
           <div class="w3-pink w3-borderk"><!-- Vehicle Data -->
@@ -332,24 +595,24 @@
               <div class="w3-row"><!-- Top Row -->
                 <div class="w3-third">
                   <text>Vehicle Model/Name: </text>
-                  <text>-</text>
+                  <textarea rows="1" cols="30" id="character_vehicle_1_name">-</textarea>
                 </div>
                 <div class="w3-third">
                   <text>Vehicle Type: </text>
-                  <text>-</text>
+                  <textarea rows="1" cols="30" id="character_vehicle_1_type">-</textarea>
                 </div>
                 <div class="w3-third">
                   <text>Vehicle Mass: </text>
-                  <text>-</text>
+                  <input type="number" name="" value="0" id="character_vehicle_1_mass" />
                 </div>
               </div>
               <div><!-- Vehicle Traits -->
                 <text>Vehicle Traits: </text>
-                <text>-</text>
+                <textarea rows="1" cols="30" id="character_vehicle_1_traits_1">-</textarea>
               </div>
               <div>
                 <text>Notes: </text>
-                <text>-</text>
+                <textarea rows="1" cols="30" id="character_vehicle_1_notes">-</textarea>
               </div>
             </div>
           </div>
