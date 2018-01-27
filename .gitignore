@@ -4,7 +4,3 @@
 
 # Bundler Files
 Gemfile.lock
-
-# HTML Artifacts
-*.html
-
